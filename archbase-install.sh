@@ -37,7 +37,8 @@ usage() {
     cecho "eg. archbase-install.sh -h archpc -u desktopuser -d sda" $white
     cecho "<device root drive>: eg. sda" $white
 }
-while [ "$1" = "" ]; then
+
+while [ "$1" != "" ]; do
     case $1 in
         -h | --host )           shift
                                 host=$1
