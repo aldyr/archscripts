@@ -100,7 +100,7 @@ passwd
 cecho "Installing minimal terminal tools: sudo git rsync wget curl inxi screen vim zsh pass openssh samba exfat-utils ntfs-3g" $green
 cecho "Enter to continue" $white
 read nothing
-pacman -S sudo git rsync wget curl inxi screen vim zsh pass openssh samba exfat-utils ntfs-3g
+pacman -S sudo git rsync wget curl screen vim zsh pass openssh samba exfat-utils ntfs-3g
 if [ -z $user ]; then
     cecho "No username given, skipping add user" $magenta
 else
