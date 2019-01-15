@@ -46,7 +46,10 @@ while [ "$1" != "" ]; do
         -u | --user )           shift
                                 user=$1
                                 ;;
-        -h | --help )           usage
+        -d | --device )         shift
+                                device=$1
+                                ;;
+        --help )                usage
                                 exit
                                 ;;
         * )                     usage
